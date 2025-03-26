@@ -170,31 +170,43 @@
         <!-- // Заголовок -->
 
         <!-- Фильтр работ -->
-        <div class="filter">
-          <ul class="filter__block">
-            <li class="filter__element">
-              <span class="filter__button filter__button--active">Все</span>
+        <div class="filter-block">
+          <ul class="filter-block__block">
+            <li class="filter-block__element">
+              <span
+                class="filter-block__button filter-block__button--active filter"
+                data-filter="all"
+                >Все</span
+              >
             </li>
-            <li class="filter__element">
-              <span class="filter__button">HTML+CSS</span>
+            <li class="filter-block__element">
+              <span class="filter-block__button filter" data-filter=".html-css"
+                >HTML+CSS</span
+              >
             </li>
-            <li class="filter__element">
-              <span class="filter__button">Bootstrap</span>
+            <li class="filter-block__element">
+              <span class="filter-block__button filter" data-filter=".bootstrap"
+                >Bootstrap</span
+              >
             </li>
-            <li class="filter__element">
-              <span class="filter__button">Учебные</span>
+            <li class="filter-block__element">
+              <span class="filter-block__button filter" data-filter=".tutorial"
+                >Учебные</span
+              >
             </li>
-            <li class="filter__element">
-              <span class="filter__button">На заказ</span>
+            <li class="filter-block__element">
+              <span class="filter-block__button filter" data-filter=".payed"
+                >На заказ</span
+              >
             </li>
           </ul>
         </div>
         <!-- // Фильтр работ -->
 
         <!-- Блок - ряд с работами -->
-        <div class="row">
+        <div class="row" id="portfolio-projects">
           <!-- Работа в портфолио -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mix html-css tutorial">
             <div class="portfolio-item">
               <div class="portfolio-item__image">
                 <a href="#" class="portfolio-item__image__hover">
@@ -214,7 +226,7 @@
           <!-- // Работа в портфолио -->
 
           <!-- Работа в портфолио -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mix bootstrap tutorial">
             <div class="portfolio-item">
               <div class="portfolio-item__image">
                 <a href="#" class="portfolio-item__image__hover">
@@ -237,7 +249,7 @@
           <!-- // Работа в портфолио -->
 
           <!-- Работа в портфолио -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mix bootstrap tutorial">
             <div class="portfolio-item">
               <div class="portfolio-item__image">
                 <a href="#" class="portfolio-item__image__hover">
@@ -260,7 +272,7 @@
           <!-- // Работа в портфолио -->
 
           <!-- Работа в портфолио -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mix html-css payed">
             <div class="portfolio-item">
               <div class="portfolio-item__image">
                 <a href="#" class="portfolio-item__image__hover">
@@ -283,7 +295,7 @@
           <!-- // Работа в портфолио -->
 
           <!-- Работа в портфолио -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mix bootstrap payed">
             <div class="portfolio-item">
               <div class="portfolio-item__image">
                 <a href="#" class="portfolio-item__image__hover">
@@ -306,7 +318,7 @@
           <!-- // Работа в портфолио -->
 
           <!-- Работа в портфолио -->
-          <div class="col-sm-4">
+          <div class="col-sm-4 mix html-css payed">
             <div class="portfolio-item">
               <div class="portfolio-item__image">
                 <a href="#" class="portfolio-item__image__hover">
@@ -371,6 +383,7 @@
     <script src="libs/jquery/jquery-1.11.2.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
 
     <!-- Custom scripts -->
     <script src="js/navigation.js"></script>

@@ -5,4 +5,7 @@ $(document).ready(function () {
       highlightSelector: "a",
     }
   );
+
+  // MixItUp - фильтрация работ в портфолио
+  $("#portfolio-projects").mixItUp();
 });
