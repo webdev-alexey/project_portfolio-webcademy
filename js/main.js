@@ -8,4 +8,15 @@ $(document).ready(function () {
 
   // MixItUp - фильтрация работ в портфолио
   $("#portfolio-projects").mixItUp();
+
+  // FancyBox - gallery
+  $(".fancybox").fancybox({
+    // Default - with fix from scroll to top
+    helpers: {
+      overlay: {
+        locked: false,
+      },
+    },
+  });
+  // End of FancyBox - gallery
 });
