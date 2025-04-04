@@ -503,7 +503,26 @@
               Связаться со мной
             </div>
 
-            <form class="contact-form" id="contact-form">
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="php/mail.php"
+              method="POST"
+            >
+              <!-- Hidden Required Fields -->
+              <input
+                type="hidden"
+                name="project_name"
+                value="Мой персональный сайт"
+              />
+              <input type="hidden" name="form_from" value="admin@site.com" />
+              <input type="hidden" name="admin_email" value="info@test.ru" />
+              <input
+                type="hidden"
+                name="form_subject"
+                value="Сообщение с сайта"
+              />
+              <!-- END Hidden Required Fields -->
               <input
                 class="contact-form__input"
                 type="text"
@@ -547,6 +566,8 @@
                 value="Отправить"
               />
             </form>
+
+            <div id="answer"></div>
           </div>
           <!-- // Контакты - Форма -->
         </div>
