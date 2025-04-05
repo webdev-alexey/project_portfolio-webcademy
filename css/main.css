@@ -576,6 +576,11 @@ a.mouse_scroll:focus {
   color: #000;
   border: 2px solid #0052c2;
 }
+.filter-block__button.filter.active {
+  padding: 10px 29px 13px;
+  color: #000;
+  border: 2px solid #0052c2;
+}
 #portfolio-projects {
   text-align: center;
 }
@@ -875,6 +880,18 @@ label.error:after {
   border-right: 12px solid transparent;
   border-left: 12px solid transparent;
 }
+.contact-form__success {
+  background-color: #FFF;
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  color: #4CAF50;
+  padding: 5px 15px 8px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  font-size: 20px;
+}
 .cmn-toggle-switch {
   font-size: 0;
   position: absolute;
@@ -1098,3 +1115,4 @@ label.error:after {
 .copyright p:last-child {
   margin-bottom: 0;
 }
+/*# sourceMappingURL=main.css.map */

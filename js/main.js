@@ -1,15 +1,15 @@
 $(document).ready(function () {
   //slide2id - плавная прокрутка по ссылкам внутри страницы
-  $("a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id(
-    {
-      highlightSelector: "a",
-    }
-  );
+  $(
+    "nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id"
+  ).mPageScroll2id({
+    highlightSelector: "nav a",
+  });
 
   // MixItUp - фильтрация работ в портфолио
   $("#portfolio-projects").mixItUp();
 
-  // FancyBox - gallery
+  // FancyBox - galery
   $(".fancybox").fancybox({
     // Default - with fix from scroll to top
     helpers: {
@@ -18,7 +18,7 @@ $(document).ready(function () {
       },
     },
   });
-  // End of FancyBox - gallery
+  // End of FancyBox - galery
 
   // jQuery Validate JS
   $("#contact-form").validate({
@@ -39,6 +39,7 @@ $(document).ready(function () {
       },
       message: "Пожалуйста, введите текст сообщения",
     },
+
     submitHandler: function (form) {
       ajaxFormSubmit();
     },
